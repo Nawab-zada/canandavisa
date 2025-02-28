@@ -15,7 +15,7 @@ const Sardar = () => {
       <h4 className='text-xl font-bold '>Sardar Jagmohan Singhs Impact in Canada</h4>
       <p className='font-serif text-xs lg:text-xl'>As a Senior Supervisor at Eden Company Sardar Jagmohan Singh played a key role in various projects, particularly in Canada. His leadership in overseeing construction work and managing food packing services helped elevate his reputation as a dedicated and skilled professional. Today, people often search for Sardar Jagmohan Singhs Company in Canada or seek to contact him for professional inquiries, including his WhatsApp number and contact details.</p>
        </div> 
-        <div className=' lg:mt-[200px] lg:mx-auto '><Image src={'/mohamensingh.png'} alt='logo' width={350} height={300}/></div>
+        <div className=' w-full lg:w-[400px] lg:mt-[200px] lg:mx-auto '><Image src={'/mohamensingh.png'} alt='logo' width={350} height={300}/></div>
 </section>
   )
 }
