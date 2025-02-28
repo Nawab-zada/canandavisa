@@ -9,7 +9,7 @@ const Scammer = () => {
 
             <h1 className='text-3xl font-bold font-serif'>Beware of Scammers Using My Name</h1>
 
-            <p className='p-3 font-serif'>
+            <p className='p-3 font-serif text-xs'>
             Recently, it has come to our attention that some individuals are fraudulently using Sardar Jagmohan Singh’s name to deceive people with false promises of a Canada visa or job offers. If anyone contacts you claiming to be Sardar Jagmohan Singh and demands money in exchange for a visa or job, please note:
 
 Sardar Jagmohan Singh does not charge for visa services.
