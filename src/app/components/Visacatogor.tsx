@@ -32,7 +32,7 @@ const FeatureCards = () => {
       <div className="w-full max-w-md mb-6">
         <input 
           type="text"
-          placeholder="Search for a job..."
+          placeholder="Search for a visa..."
           className="w-full p-3 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
