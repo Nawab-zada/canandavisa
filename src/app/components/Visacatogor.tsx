@@ -24,8 +24,10 @@ const FeatureCards = () => {
 
   return (
     <div className="flex flex-col items-center w-full p-5">
-      <h1 className="font-bold text-[20px] font-serif mb-3 text-red-500">Search visa</h1>
-           <h5 className="text-xs font-bold font-serif mb-4">No age limit|No degree|without IELTS</h5>
+      <h1 className="font-bold text-2xl font-serif mb-3 text-red-600">Search Visa</h1>
+      <h5 className="text-sm font-semibold font-serif mb-4 text-gray-700 bg-yellow-100 p-2 rounded-md shadow-sm">
+        No age limit | No degree | Without IELTS
+      </h5>
       {/* Search Bar */}
       <div className="w-full max-w-md mb-6">
         <input 
@@ -38,7 +40,7 @@ const FeatureCards = () => {
       </div>
 
       {/* Job Listings */}
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4  w-full max-w-screen-lg font-serif p-5">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 w-full max-w-screen-lg font-serif p-5">
         {filteredFeatures.length > 0 ? (
           filteredFeatures.map((feature, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -53,7 +55,7 @@ const FeatureCards = () => {
               <div className="p-4 text-center">
                 <h3 className="text-xl font-bold text-gray-800">{feature.title}</h3>
                 <p className="mt-2 text-gray-600">SAR {feature.salary}</p>
-                <button className="mt-4 bg-red-500 text-white px-6 py-2  hover:bg-blue-600 transition-colors">
+                <button className="mt-4 bg-red-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors">
                   Learn More
                 </button>
               </div>
