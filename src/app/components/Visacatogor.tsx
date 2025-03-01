@@ -23,7 +23,7 @@ const FeatureCards = () => {
   );
 
   return (
-    <div className="flex flex-col items-center w-full p-5">
+    <div className="flex flex-col items-center w-full p-5 bg-gray-50  ">
       <h1 className="font-bold text-2xl font-serif mb-3 text-red-600">Search Visa</h1>
       <h5 className="text-sm font-semibold font-serif mb-4 text-gray-700 bg-yellow-100 p-2 rounded-md shadow-sm">
         No age limit | No degree | Without IELTS
@@ -40,7 +40,7 @@ const FeatureCards = () => {
       </div>
 
       {/* Job Listings */}
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 w-full max-w-screen-lg font-serif p-5">
+      <div className=" grid  grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 w-full max-w-screen-lg font-serif p-5">
         {filteredFeatures.length > 0 ? (
           filteredFeatures.map((feature, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">

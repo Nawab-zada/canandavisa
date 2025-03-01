@@ -3,6 +3,7 @@ import Aboutus from "./components/Aboutus";
 import Sardar from "./components/Sardar";
 import Scammer from "./components/Scammer";
 import FeatureCards from "./components/Visacatogor";
+import Features from "./components/Steps";  
 export default function Home() {
   return (
     <div className="h-[100px]">
@@ -11,6 +12,7 @@ export default function Home() {
      <Sardar/>
      <Scammer/>
      <FeatureCards/>
+     <Features/>
     </div>
   );
 }
