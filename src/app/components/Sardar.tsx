@@ -5,7 +5,7 @@ const Sardar = () => {
   return (
     <section className='flex flex-col lg:flex-row items-center lg:items-start'>
       <div className='p-5 lg:w-1/2'>
-        <h1 className='text-smlg:text-3xl font-bold p-3 mt-9 font-serif text-gray-800'>
+        <h1 className='text-sm lg:text-3xl font-bold p-3 mt-9 font-serif text-gray-800'>
           Welcome to the Official Website of Sardar Jagmohan Singh
         </h1>
         <div className='bg-red-500 h-1 w-[100px] m-2'></div>

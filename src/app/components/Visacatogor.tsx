@@ -9,10 +9,10 @@ import {
 import Image from 'next/image';
 
 const features = [
-  { title: "Security Guard", description: "Ensure safety and security at company premises.", salary: 3500, icon: <FaShieldAlt size={30} />, image: "/secrityguard.png" },
-  { title: "Food Packing", description: "Pack and prepare food products for distribution.", salary: 2200, icon: <FaBox size={30} />, image: "/foodpacker.png" },
-  { title: "Cooker", description: "Prepare and cook meals according to company standards.", salary: 3000, icon: <FaUtensils size={30} />, image: "/cook.png" },
-  { title: "Driver", description: "Transport goods and employees safely to designated locations.", salary: 3500, icon: <FaTruck size={30} />, image: "/driver.png" },
+  { title: "Security Guard", description: "Ensure safety and security at company premises.", salary: 5000, icon: <FaShieldAlt size={30} />, image: "/secrityguard.png" },
+  { title: "Food Packing", description: "Pack and prepare food products for distribution.", salary: 5000, icon: <FaBox size={30} />, image: "/foodpacker.png" },
+  { title: "Cooker", description: "Prepare and cook meals according to company standards.", salary: 5000, icon: <FaUtensils size={30} />, image: "/cook.png" },
+  { title: "Driver", description: "Transport goods and employees safely to designated locations.", salary: 5000, icon: <FaTruck size={30} />, image: "/driver.png" },
 ];
 
 const FeatureCards = () => {
