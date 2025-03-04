@@ -1,13 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
+
 const VisaBanner = () => {
   return (
-
-    <div className='p-1 lg:w-[1400px] lg:h-[450px]'>
-           <Image src={'/immigrationvisa.png'}alt='banner' width={1350} height={200} className='h-[200px]'/>
+    <div className="w-full h-auto overflow-hidden">
+      <div className="relative mt-1 w-full h-[130px] sm:h-[300px] md:h-[350px] lg:h-[450px]">
+        <Image
+          src="/immigrationvisa.png"
+          alt="banner"
+          fill // Use `fill` to make the image responsive
+          className="object-cover object-center" // Ensure the image covers the container
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1350px" // Optimize image loading
+        />
+      </div>
     </div>
-  )
-
+  );
 };
 
 export default VisaBanner;

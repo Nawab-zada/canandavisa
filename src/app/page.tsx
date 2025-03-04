@@ -10,9 +10,11 @@ import Footer from "./components/Footer";
 import CanadaVisaHero from "./components/Apply";
 import WhatsAppButton from "./components/Whatsappbutton";
 import StickyApplyButton from "./components/Stickybutton";
+import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <div className="h-[100px]">
+      <Navbar/>
      <CanadaVisaHero/>
      <Aboutus/>
      <Sardar/>
