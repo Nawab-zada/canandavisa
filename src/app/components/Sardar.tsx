@@ -27,7 +27,7 @@ const Sardar = () => {
         </ul>
       </div>
       <div className='p-4 w-full lg:w-[400px] lg:mt-[200px] lg:mx-auto'>
-        <Image src={'/mohamensingh.png'} alt='Sardar Jagmohan Singh' width={350} height={300} className='rounded-lg shadow-md'/>
+        <Image src={'/sardarpng.png'} alt='Sardar Jagmohan Singh' width={350} height={300} className='  '/>
       </div>
     </section>
   )
