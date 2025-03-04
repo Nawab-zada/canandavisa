@@ -2,7 +2,7 @@ import React from 'react'
 
 const Scammer = () => {
   return (
-    <div className='flex flex-col items-center p-4'>
+    <div className='flex flex-col items-center p-4 bg-slate-50'>
       <h1 className='  lg:text-3xl font-bold font-serif text-red-600 mb-4'>
         Beware of Scammers Using My Name
       </h1>

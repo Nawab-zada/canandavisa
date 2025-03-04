@@ -20,7 +20,7 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <div className="lg:w-full mx-auto p-8">
+    <div className="lg:w-full mx-auto p-8 bg-slate-50">
       <h2 className="text-3xl mb-6 flex justify-center font-bold text-red-500">
       
       </h2>

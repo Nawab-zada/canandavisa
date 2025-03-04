@@ -23,14 +23,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-red-800 p-4 z-10">
+    <nav className="bg-red-500   p-4 z-10">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">
           <Link href="/" className="text-white hover:text-gray-400">
-            MyLogo
+            
           </Link>
         </div>
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-4 font-bold tracking-wide">
           {menuItems.map((item, index) => (
             <Link
               key={index}
@@ -46,7 +46,7 @@ const Navbar = () => {
           className="md:hidden text-white focus:outline-none"
         >
           <svg
-            className="w-6 h-6"
+            className="w-10 h-10"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -63,17 +63,17 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       <div
-        className={` z-10 fixed top-0 right-0 h-full w-64 bg-gray-800 transform ${
+        className={` z-10 fixed top-0 right-0 h-full w-64 bg-white transform ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
         <div className="flex justify-end p-4">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none"
+            className="text-black focus:outline-none"
           >
             <svg
-              className="w-6 h-6"
+              className="w-10 h-10"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -93,7 +93,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.link}
-              className="text-white hover:text-gray-400"
+              className="text-black hover:text-gray-400"
               onClick={() => setIsOpen(false)} // Close menu on link click
             >
               {item.name}

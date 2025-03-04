@@ -11,9 +11,11 @@ import CanadaVisaHero from "./components/Apply";
 import WhatsAppButton from "./components/Whatsappbutton";
 import StickyApplyButton from "./components/Stickybutton";
 import Navbar from "./components/Navbar";
+import CanadaVisaHeader from "./components/Top";
 export default function Home() {
   return (
     <div className="h-[100px]">
+      <CanadaVisaHeader/>
       <Navbar/>
      <CanadaVisaHero/>
      <Aboutus/>
