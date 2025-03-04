@@ -21,7 +21,7 @@ const WhatsAppButton = () => {
 
     // Format the message for WhatsApp
     const whatsappMessage = `Name: ${formData.name}%0APhone: ${formData.phone}%0AEmail: ${formData.email}%0AMessage: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/16722320318?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/+923028334266?text=${whatsappMessage}`;
 
     window.open(whatsappUrl, '_blank');
 
