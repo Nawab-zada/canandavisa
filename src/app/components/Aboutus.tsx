@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Aboutus = () => {
   return (
-   <section className=' mt-8 lg:mt-10 bg-slate-50'>
+   <section className=' mt-8 lg:mt-10 '>
             <div className='flex flex-col lg:gap-[100px] lg:flex-row mt-3'>
               <div className=' min-w-md lg:w-1/2'>
                 <h1 className='text-3xl font-bold font-serifj p-2'>Who we Are </h1>
