@@ -31,7 +31,7 @@ const WhatsAppButton = () => {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-14  mx-5 z-50">
       {/* WhatsApp Button */}
       <motion.button
         onClick={toggleForm}
