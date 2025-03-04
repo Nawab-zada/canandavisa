@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const VisaBanner = () => {
   return (
-    <div className="w-full h-auto overflow-hidden">
+    <div className="w-full h-auto ">
       <div className="relative mt-1 w-full h-[130px] sm:h-[300px] md:h-[350px] lg:h-[450px]">
         <Image
           src="/immigrationvisa.png"

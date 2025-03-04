@@ -23,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-red-800 p-4">
+    <nav className="bg-red-800 p-4 z-10">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">
           <Link href="/" className="text-white hover:text-gray-400">
@@ -63,7 +63,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-gray-800 transform ${
+        className={` z-10 fixed top-0 right-0 h-full w-64 bg-gray-800 transform ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
