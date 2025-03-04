@@ -8,6 +8,7 @@ import { Freevisa } from "./components/Freevisa";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CanadaVisaHero from "./components/Apply";
+import WhatsAppButton from "./components/Whatsappbutton";
 export default function Home() {
   return (
     <div className="h-[100px]">
@@ -20,6 +21,7 @@ export default function Home() {
      <Freevisa/>
      <Contact/>
      <Footer/>
+     <WhatsAppButton/>
      
     </div>
 
