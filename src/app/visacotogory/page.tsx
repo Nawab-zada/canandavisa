@@ -1,12 +1,12 @@
 'use client'
+'use client'
 
 import React, { useState } from "react";
 import { 
-  FaHardHat, FaShieldAlt, FaCashRegister, FaTruck, FaUsers, 
-  FaPlug, FaBroom, FaConciergeBell, FaTools, FaCalculator, 
-  FaCar, FaShippingFast, FaBox, FaUtensils 
+  FaShieldAlt, FaBox, FaUtensils, FaTruck 
 } from "react-icons/fa";
 import Image from 'next/image';
+import { motion } from "framer-motion";
 
 const features = [
   { title: "Security Guard", description: "Ensure safety and security at company premises.", salary: 5000, icon: <FaShieldAlt size={30} />, image: "/secrityguard.png" },
@@ -23,11 +23,12 @@ const FeatureCards = () => {
   );
 
   return (
-    <div className="flex flex-col items-center w-full p-5 bg-gray-50  ">
+    <div className="flex flex-col items-center w-full p-5 bg-gray-50">
       <h1 className="font-bold text-2xl font-serif mb-3 text-red-600">Search Visa</h1>
       <h5 className="text-sm font-semibold font-serif mb-4 text-gray-700 bg-yellow-100 p-2 rounded-md shadow-sm">
         No age limit | No degree | Without IELTS
       </h5>
+      
       {/* Search Bar */}
       <div className="w-full max-w-md mb-6">
         <input 
@@ -39,11 +40,21 @@ const FeatureCards = () => {
         />
       </div>
 
-      {/* Job Listings */}
-      <div className=" grid  grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 w-full max-w-screen-lg font-serif p-5">
+      {/* Job Listings with Zigzag Animation */}
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 w-full max-w-screen-lg font-serif p-5">
         {filteredFeatures.length > 0 ? (
           filteredFeatures.map((feature, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <motion.div 
+              key={index}
+              initial={{ 
+                opacity: 0, 
+                x: index % 2 === 0 ? 100 : -100 // Right for even, Left for odd
+              }}
+              whileInView={{ opacity: 1, x: 0 }} // Bring to normal position
+              viewport={{ once: true }} // Animate only once
+              transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }} // Smooth staggered effect
+              className="bg-white rounded-lg shadow-lg overflow-hidden"
+            >
               <div className="relative h-48 w-full">
                 <Image
                   src={feature.image || '/images/default.jpg'}
@@ -59,7 +70,7 @@ const FeatureCards = () => {
                   Learn More
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))
         ) : (
           <p className="text-red-500 font-semibold text-lg">No jobs found</p>
@@ -70,3 +81,6 @@ const FeatureCards = () => {
 };
 
 export default FeatureCards;
+
+
+
