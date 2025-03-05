@@ -14,9 +14,9 @@ const Navbar = () => {
   const menuItems = [
     { name: 'Home', link: '/' },
     { name: 'About Us', link: '/Aboutus' },
-    { name: 'Visa catogeries', link: '/services' },
-    { name: 'Steps', link: '/portfolio' },
-    { name: 'Contact us', link: '/blog' },
+    { name: 'Visa catogeries', link: '/visacotogory' },
+    { name: 'Steps', link: '/steps' },
+    { name: 'Contact us', link: '/Contactus' },
     
   ];
 

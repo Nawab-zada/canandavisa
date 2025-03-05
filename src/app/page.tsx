@@ -1,22 +1,22 @@
 import Image from "next/image";
-import Aboutus from "./components/Aboutus";
+
 import Sardar from "./components/Sardar";
 import Scammer from "./components/Scammer";
-import FeatureCards from "./components/Visacatogor";
 import Features from "./components/Steps"; 
 import { Freevisa } from "./components/Freevisa"; 
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CanadaVisaHero from "./components/Apply";
 import WhatsAppButton from "./components/Whatsappbutton";
 import StickyApplyButton from "./components/Stickybutton";
-import Navbar from "./components/Navbar";
-import CanadaVisaHeader from "./components/Top";
+import Aboutus from "@/app/Aboutus/page";
+import FeatureCards from "./visacotogory/page";
+import Contact from "./Contactus/page";
+
+
 export default function Home() {
   return (
     <div className="h-[100px]">
-      <CanadaVisaHeader/>
-      <Navbar/>
+    
      <CanadaVisaHero/>
      <Aboutus/>
      <Sardar/>
