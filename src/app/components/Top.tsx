@@ -18,7 +18,7 @@ const CanadaVisaHeader = () => {
           {/* Phone - Hidden on small screens */}
           <div className="hidden lg:flex items-center space-x-2">
             <Phone className="text-red-600 w-5 h-5" />
-            <span>+16722320318</span>
+            <span>+1 647-495-1207</span>
           </div>
 
           {/* Timings - Hidden on small screens */}
@@ -32,7 +32,7 @@ const CanadaVisaHeader = () => {
           {/* Mail - Hidden on small screens */}
           <div className="hidden lg:flex items-center space-x-2">
             <Mail className="text-red-600 w-5 h-5" />
-            <span>info@canada-visa-apply.com</span>
+            <span>Sardarjagmohansinghnanda@gmail.com</span>
           </div>
 
           {/* Social Media Icons */}

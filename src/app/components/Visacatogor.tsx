@@ -55,7 +55,7 @@ const FeatureCards = () => {
               <div className="p-4 text-center">
                 <h3 className="text-xl font-bold text-gray-800">{feature.title}</h3>
                 <p className="mt-2 text-gray-600">SAR {feature.salary}</p>
-                <button className="mt-4 bg-red-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors">
+                <button className="mt-4 bg-red-500 text-white px-6 py-2 hover:bg-blue-600 transition-colors">
                   Learn More
                 </button>
               </div>

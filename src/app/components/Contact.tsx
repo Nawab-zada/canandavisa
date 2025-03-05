@@ -9,12 +9,12 @@ const contactInfo = [
   {
     icon: <FaPhoneAlt size={40} />,
     label: "Phone",
-    value: "+123 456 7890",
+    value: "+1 647-495-1207",
   },
   {
     icon: <FaEnvelope size={40} />,
     label: "Email",
-    value: "contact@example.com",
+    value: "Sardarjagmohansinghnanda@gmail.com",
   },
 ];
 

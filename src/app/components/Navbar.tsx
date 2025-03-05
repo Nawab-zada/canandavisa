@@ -13,24 +13,22 @@ const Navbar = () => {
   // Dummy menu names with links
   const menuItems = [
     { name: 'Home', link: '/' },
-    { name: 'About', link: '/about' },
-    { name: 'Services', link: '/services' },
-    { name: 'Portfolio', link: '/portfolio' },
-    { name: 'Blog', link: '/blog' },
-    { name: 'Contact', link: '/contact' },
-    { name: 'Pricing', link: '/pricing' },
-    { name: 'FAQ', link: '/faq' },
+    { name: 'About Us', link: '/Aboutus' },
+    { name: 'Visa catogeries', link: '/services' },
+    { name: 'Steps', link: '/portfolio' },
+    { name: 'Contact us', link: '/blog' },
+    
   ];
 
   return (
     <nav className="bg-red-500   p-4 z-10">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container  justify-between   flex  items-center">
         <div className="text-white text-lg font-bold">
           <Link href="/" className="text-white hover:text-gray-400">
             
           </Link>
         </div>
-        <div className="hidden md:flex space-x-4 font-bold tracking-wide">
+        <div className="hidden md:flex space-x-4 font-bold tracking-wide mx-auto p-2 text-xl ">
           {menuItems.map((item, index) => (
             <Link
               key={index}
