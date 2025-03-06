@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,26 +15,24 @@ const Navbar = () => {
   const menuItems = [
     { name: 'Home', link: '/' },
     { name: 'About Us', link: '/Aboutus' },
-    { name: 'Visa catogeries', link: '/visacotogory' },
+    { name: 'Visa Categories', link: '/visacotogory' },
     { name: 'Steps', link: '/steps' },
-    { name: 'Contact us', link: '/Contactus' },
-    
+    { name: 'Contact Us', link: '/Contactus' },
   ];
 
   return (
-    <nav className="bg-red-500   p-4 z-10">
-      <div className="container  justify-between   flex  items-center">
-        <div className="text-white text-lg font-bold">
-          <Link href="/" className="text-white hover:text-gray-400">
-            
-          </Link>
+    <nav className="bg-red-400 p-5 z-10">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="flex items-center">
+          <Image src={'/thr.png'} alt='Logo' width={100} height={50} className="mr-4" />
+          
         </div>
-        <div className="hidden md:flex space-x-4 font-bold tracking-wide mx-auto p-2 text-xl ">
+        <div className="hidden  md:flex space-x-4 font-bold tracking-wide text-xl">
           {menuItems.map((item, index) => (
             <Link
               key={index}
               href={item.link}
-              className="text-white hover:text-gray-400"
+              className=" hover:text-gray-400 "
             >
               {item.name}
             </Link>
@@ -61,7 +60,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       <div
-        className={` z-10 fixed top-0 right-0 h-full w-64 bg-white transform ${
+        className={`z-10 fixed top-0 right-0 h-full w-64 bg-white transform ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
