@@ -12,13 +12,15 @@ import Aboutus from "@/app/Aboutus/page";
 import FeatureCards from "./visacotogory/page";
 import Contact from "./Contactus/page";
 import Scammer from "@/app/components/Scammer";
-
+import CallToAction from "./components/Calltoaction";
+import Banner from "./components/Apply";
 export default function Home() {
   return (
     <div className="">
     
-     
+     <Banner/>
      <Aboutus/>
+     <CallToAction/>
      <FeatureCards/>
      <Sardar/>
      <Scammer/>

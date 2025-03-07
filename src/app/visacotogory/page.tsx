@@ -3,7 +3,7 @@
 
 import React, { useState } from "react";
 import { 
-  FaShieldAlt, FaBox, FaUtensils, FaTruck 
+  FaShieldAlt, FaBox, FaUtensils, FaTruck, FaCashRegister, FaCalculator, FaWrench, FaHardHat, FaBolt
 } from "react-icons/fa";
 import Image from 'next/image';
 import { motion } from "framer-motion";
@@ -11,8 +11,13 @@ import { motion } from "framer-motion";
 const features = [
   { title: "Security Guard", description: "Ensure safety and security at company premises.", salary: 5000, icon: <FaShieldAlt size={30} />, image: "/secrityguard.png" },
   { title: "Food Packing", description: "Pack and prepare food products for distribution.", salary: 5000, icon: <FaBox size={30} />, image: "/foodpacker.png" },
-  { title: "Cooker", description: "Prepare and cook meals according to company standards.", salary: 5000, icon: <FaUtensils size={30} />, image: "/cook.png" },
+  { title: "Cook", description: "Prepare and cook meals according to company standards.", salary: 5000, icon: <FaUtensils size={30} />, image: "/cook.png" },
   { title: "Driver", description: "Transport goods and employees safely to designated locations.", salary: 5000, icon: <FaTruck size={30} />, image: "/driver.png" },
+  { title: "Cashier", description: "Handle financial transactions and customer payments.", salary: 5000, icon: <FaCashRegister size={30} />, image: "/cashier.png" },
+  { title: "Accounting", description: "Manage financial records and transactions.", salary: 5000, icon: <FaCalculator size={30} />, image: "/accounting.png" },
+  { title: "Plumber", description: "Install and repair piping systems.", salary: 5000, icon: <FaWrench size={30} />, image: "/plumber.png" },
+ 
+  { title: "Electrician", description: "Install and maintain electrical systems.", salary: 5000, icon: <FaBolt size={30} />, image: "/electric.png" },
 ];
 
 const FeatureCards = () => {
@@ -81,6 +86,7 @@ const FeatureCards = () => {
 };
 
 export default FeatureCards;
+
 
 
 

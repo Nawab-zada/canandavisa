@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="bg-red-400 p-5 z-10">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <Image src={'/thr.png'} alt='Logo' width={100} height={50} className="mr-4" />
+          <Image src={'/thr.png'} alt='Logo' width={100} height={100} className="mr-4" />
           
         </div>
         <div className="hidden  md:flex space-x-4 font-bold tracking-wide text-xl">
