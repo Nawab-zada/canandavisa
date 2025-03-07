@@ -14,12 +14,7 @@ const CallToAction = () => {
 
         {/* Work Visa Button */}
         <div className="flex justify-center">
-          <a
-            href="#workVisa"
-            className="inline-block px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold text-lg rounded-lg transition duration-300 shadow-lg"
-          >
-            Apply for Work Visa
-          </a>
+        
         </div>
 
         {/* Contact Information */}
