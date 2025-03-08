@@ -9,15 +9,15 @@ import Image from 'next/image';
 import { motion } from "framer-motion";
 
 const features = [
-  { title: "Security Guard", description: "Ensure safety and security at company premises.", salary: 5000, icon: <FaShieldAlt size={30} />, image: "/secrityguard.png" },
-  { title: "Food Packing", description: "Pack and prepare food products for distribution.", salary: 5000, icon: <FaBox size={30} />, image: "/foodpacker.png" },
-  { title: "Cook", description: "Prepare and cook meals according to company standards.", salary: 5000, icon: <FaUtensils size={30} />, image: "/cook.png" },
-  { title: "Driver", description: "Transport goods and employees safely to designated locations.", salary: 5000, icon: <FaTruck size={30} />, image: "/driver.png" },
-  { title: "Cashier", description: "Handle financial transactions and customer payments.", salary: 5000, icon: <FaCashRegister size={30} />, image: "/cashier.png" },
-  { title: "Accounting", description: "Manage financial records and transactions.", salary: 5000, icon: <FaCalculator size={30} />, image: "/accounting.png" },
-  { title: "Plumber", description: "Install and repair piping systems.", salary: 5000, icon: <FaWrench size={30} />, image: "/plumber.png" },
+  { title: "Security Guard", description: "Ensure safety and security at company premises.", salary: 2300, icon: <FaShieldAlt size={30} />, image: "/secrityguard.png" },
+  { title: "Food Packing", description: "Pack and prepare food products for distribution.", salary: 4000, icon: <FaBox size={30} />, image: "/foodpacker.png" },
+  { title: "Cook", description: "Prepare and cook meals according to company standards.", salary: 2500, icon: <FaUtensils size={30} />, image: "/cook.png" },
+  { title: "Driver", description: "Transport goods and employees safely to designated locations.", salary: 3800, icon: <FaTruck size={30} />, image: "/driver.png" },
+  { title: "Cashier", description: "Handle financial transactions and customer payments.", salary: 2700, icon: <FaCashRegister size={30} />, image: "/cashier.png" },
+  { title: "Accounting", description: "Manage financial records and transactions.", salary: 3200, icon: <FaCalculator size={30} />, image: "/accounting.png" },
+  { title: "Plumber", description: "Install and repair piping systems.", salary: 2100, icon: <FaWrench size={30} />, image: "/plumber.png" },
  
-  { title: "Electrician", description: "Install and maintain electrical systems.", salary: 5000, icon: <FaBolt size={30} />, image: "/electric.png" },
+  { title: "Electrician", description: "Install and maintain electrical systems.", salary: 3000, icon: <FaBolt size={30} />, image: "/electric.png" },
 ];
 
 const FeatureCards = () => {
@@ -70,7 +70,7 @@ const FeatureCards = () => {
               </div>
               <div className="p-4 text-center">
                 <h3 className="text-xl font-bold text-gray-800">{feature.title}</h3>
-                <p className="mt-2 text-gray-600">SAR {feature.salary}</p>
+                <p className="mt-2 text-gray-600">$ {feature.salary}</p>
                 <button className="mt-4 bg-red-500 text-white px-6 py-2 hover:bg-blue-600 transition-colors">
                   Learn More
                 </button>
