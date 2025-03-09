@@ -68,7 +68,7 @@ const FeatureCards = () => {
                   className="object-cover w-full h-full"
                 />
               </div>
-              <div className="p-4 text-center">
+              <div className="p-3 text-center">
                 <h3 className="text-xl font-bold text-gray-800">{feature.title}</h3>
                 <p className="mt-2 text-gray-600">$ {feature.salary}</p>
                 <button className="mt-4 bg-red-500 text-white px-6 py-2 hover:bg-blue-600 transition-colors">
