@@ -9,7 +9,7 @@ const contactInfo = [
   {
     icon: <FaPhoneAlt size={40} />,
     label: "Phone",
-    value: "+19027062766",
+    value: "+1902-706-2766",
   },
   {
     icon: <FaEnvelope size={40} />,
