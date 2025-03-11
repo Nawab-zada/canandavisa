@@ -14,10 +14,10 @@ const Navbar = () => {
   // Dummy menu names with links
   const menuItems = [
     { name: 'Home', link: '/' },
-    { name: 'About Us', link: '/aboutus' },
-    { name: 'Visa Categories', link: '/visacategory' },
+    { name: 'About Us', link: '/A boutus' },
+    { name: 'Visa Categories', link: '/visacotogory' },
     { name: 'Steps', link: '/steps' },
-    { name: 'Contact Us', link: '/contactus' },
+    { name: 'Contact Us', link: '/Contactus' },
   ];
 
   return (
