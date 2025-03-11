@@ -14,7 +14,7 @@ const Navbar = () => {
   // Dummy menu names with links
   const menuItems = [
     { name: 'Home', link: '/' },
-    { name: 'About Us', link: '/A boutus' },
+    { name: 'About Us', link: '/Aboutus' },
     { name: 'Visa Categories', link: '/visacotogory' },
     { name: 'Steps', link: '/steps' },
     { name: 'Contact Us', link: '/Contactus' },

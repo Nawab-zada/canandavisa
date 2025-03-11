@@ -21,17 +21,17 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <MapPin size={18} className="flex-shrink-0" />
-                <span className="text-sm">1981 Kennedy Rd</span>
+                <span className="text-sm">Toronto</span>
               </div>
               
               <div className="flex items-center gap-3">
                 <Phone size={18} className="flex-shrink-0" />
-                <span className="text-sm">+16722320318</span>
+                <span className="text-sm">+1902-706-2766</span>
               </div>
               
               <div className="flex items-center gap-3">
                 <Mail size={18} className="flex-shrink-0" />
-                <span className="text-sm">info@canada-visa-apply.com</span>
+                <span className="text-sm">Sardarjagmohansinghnanda@gmail.com</span>
               </div>
             </div>
           </div>
@@ -47,17 +47,17 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about-us" className="text-sm text-red-500 hover:text-red-600 transition-colors">
+                  <Link href="/Aboutus" className="text-sm hover:text-red-600 transition-colors">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/visa-categories" className="text-sm hover:text-red-500 transition-colors">
+                  <Link href="/visacotogory" className="text-sm hover:text-red-500 transition-colors">
                     Visa Categories
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact-us" className="text-sm hover:text-red-500 transition-colors">
+                  <Link href="/Contactus" className="text-sm hover:text-red-500 transition-colors">
                     Contact Us
                   </Link>
                 </li>

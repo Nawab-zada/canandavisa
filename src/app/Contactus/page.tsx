@@ -4,12 +4,12 @@ const contactInfo = [
   {
     icon: <FaMapMarkerAlt size={40} />,
     label: "Address",
-    value: "123 Main Street, City, Country",
+    value: "toronto,canada",
   },
   {
     icon: <FaPhoneAlt size={40} />,
     label: "Phone",
-    value: "+1 647-495-1207",
+    value: "+19027062766",
   },
   {
     icon: <FaEnvelope size={40} />,
