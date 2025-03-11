@@ -22,14 +22,14 @@ const CallToAction = () => {
           <p className="mb-2">Need help? Contact us now!</p>
           <p>
             <a
-              href="https://wa.me/yourwhatsappnumber"
+              href="https://wa.me/+19027062766"
               className="text-white font-semibold underline hover:text-gray-200"
             >
               WhatsApp
             </a>{' '}
             |{' '}
             <a
-              href="mailto:youremail@example.com"
+              href="Sardarjagmohansinghnanda@gmail.com"
               className="text-white font-semibold underline hover:text-gray-200"
             >
               Email Us
