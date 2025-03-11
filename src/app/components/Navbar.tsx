@@ -14,25 +14,24 @@ const Navbar = () => {
   // Dummy menu names with links
   const menuItems = [
     { name: 'Home', link: '/' },
-    { name: 'About Us', link: '/Aboutus' },
-    { name: 'Visa Categories', link: '/visacotogory' },
+    { name: 'About Us', link: '/aboutus' },
+    { name: 'Visa Categories', link: '/visacategory' },
     { name: 'Steps', link: '/steps' },
-    { name: 'Contact Us', link: '/Contactus' },
+    { name: 'Contact Us', link: '/contactus' },
   ];
 
   return (
-    <nav className="bg-red-400 p-5 z-10">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-primary-500 p-4 z-10 shadow-md bg-red-700">
+      <div className="container mx-auto flex justify-between items-center ">
         <div className="flex items-center">
           <Image src={'/thr.png'} alt='Logo' width={100} height={100} className="mr-4" />
-          
         </div>
-        <div className="hidden  md:flex space-x-4 font-bold tracking-wide text-xl">
+        <div className="hidden md:flex space-x-8">
           {menuItems.map((item, index) => (
             <Link
               key={index}
               href={item.link}
-              className=" hover:text-gray-400 "
+              className=" hover:text-primary-200 text-lg font-semibold transition-colors duration-200"
             >
               {item.name}
             </Link>
@@ -41,6 +40,7 @@ const Navbar = () => {
         <button
           onClick={toggleMenu}
           className="md:hidden text-white focus:outline-none"
+          aria-label="Toggle menu"
         >
           <svg
             className="w-10 h-10"
@@ -62,12 +62,13 @@ const Navbar = () => {
       <div
         className={`z-10 fixed top-0 right-0 h-full w-64 bg-white transform ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
-        } transition-transform duration-300 ease-in-out md:hidden`}
+        } transition-transform duration-300 ease-in-out md:hidden shadow-lg`}
       >
         <div className="flex justify-end p-4">
           <button
             onClick={toggleMenu}
             className="text-black focus:outline-none"
+            aria-label="Close menu"
           >
             <svg
               className="w-10 h-10"
@@ -90,7 +91,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.link}
-              className="text-black hover:text-gray-400"
+              className="text-black hover:text-primary-500 text-lg font-semibold transition-colors duration-200"
               onClick={() => setIsOpen(false)} // Close menu on link click
             >
               {item.name}
