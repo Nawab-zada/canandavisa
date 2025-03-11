@@ -29,7 +29,7 @@ const CallToAction = () => {
             </a>{' '}
             |{' '}
             <a
-              href="mailto:Sardarjagmohansinghnanda@gmail.com "
+              href="mailto:Sardarjagmohansinghnanda@gmail.com"
               className="text-white font-semibold underline hover:text-gray-200"
             >
               Email Us
