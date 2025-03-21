@@ -21,7 +21,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-primary-500 p-4 z-10 shadow-md bg-red-700">
+    <nav className="bg-primary-500 p-4 z-10 shadow-md bg-whitex">
       <div className="container mx-auto flex justify-between items-center ">
         <div className="flex items-center">
           <Image src={'/thr.png'} alt='Logo' width={100} height={100} className="mr-4" />

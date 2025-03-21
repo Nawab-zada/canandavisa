@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import Image from 'next/image';
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const features = [
   { title: "Security Guard", description: "Ensure safety and security at company premises.", salary: 2300, icon: <FaShieldAlt size={30} />, image: "/secrityguard.png" },
@@ -72,7 +73,7 @@ const FeatureCards = () => {
                 <h3 className="text-xl font-bold text-gray-800">{feature.title}</h3>
                 <p className="mt-2 text-gray-600">$ {feature.salary}</p>
                 <button className="mt-4 bg-red-500 text-white px-6 py-2 hover:bg-blue-600 transition-colors">
-                  Learn More
+                  <Link href="/create">Apply Now</Link>
                 </button>
               </div>
             </motion.div>
