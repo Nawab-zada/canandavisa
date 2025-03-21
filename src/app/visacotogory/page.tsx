@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const features = [
   { title: "Security Guard", description: "Ensure safety and security at company premises.", salary: 2300, icon: <FaShieldAlt size={30} />, image: "/secrityguard.png" },
-  { title: "Food Packing", description: "Pack and prepare food products for distribution.", salary: 4000, icon: <FaBox size={30} />, image: "/foodpacker.png" },
+  { title: "Food Packing", description: "Pack and prepare food products for distribution.", salary: 3500, icon: <FaBox size={30} />, image: "/foodpacker.png" },
   { title: "Cook", description: "Prepare and cook meals according to company standards.", salary: 2500, icon: <FaUtensils size={30} />, image: "/cook.png" },
   { title: "Driver", description: "Transport goods and employees safely to designated locations.", salary: 3800, icon: <FaTruck size={30} />, image: "/driver.png" },
   { title: "Cashier", description: "Handle financial transactions and customer payments.", salary: 2700, icon: <FaCashRegister size={30} />, image: "/cashier.png" },
