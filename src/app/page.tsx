@@ -7,7 +7,7 @@ import { Freevisa } from "./components/Freevisa";
 import Footer from "./components/Footer";
 
 import WhatsAppButton from "./components/Whatsappbutton";
-import StickyApplyButton from "./components/Stickybutton";
+
 import Aboutus from "@/app/Aboutus/page";
 import FeatureCards from "./visacotogory/page";
 import Contact from "./Contactus/page";
@@ -29,7 +29,7 @@ export default function Home() {
      <Contact/>
      <Footer/>
      <WhatsAppButton/>
-     <StickyApplyButton/>
+    
      
      
     </div>
