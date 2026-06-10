@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "sardarjagmohansingh",
-  description: "sardarjagmohansingh",
+  title: "Sukhchain Singh",
+  description: "Sukhchain Singh - Canada Visa Apply",
 };
 
 export default function RootLayout({

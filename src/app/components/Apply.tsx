@@ -3,16 +3,17 @@ import Image from 'next/image';
 
 const Banner = () => {
   return (
-    <div className="w-full h-auto">
-      <div className="relative w-full h-[130px] sm:h-[300px] md:h-[350px] lg:h-[450px] overflow-hidden">
-        {/* Sliding animation using Tailwind CSS */}
-        <div className="absolute inset-0 animate-slideInFromLeft">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 mt-4 sm:mt-6">
+      <div className="relative w-full h-[180px] sm:h-[320px] md:h-[420px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-slate-100">
+        {/* Sliding & Fade-in animation */}
+        <div className="absolute inset-0 animate-fadeIn animate-slideInFromLeft">
           <Image
-            src="/immigrationvisa.png"
-            alt="banner"
+            src="/banner.jpg"
+            alt="Canada Study Visa - APNI Immigration Inc."
             fill
-            className="object-cover object-center"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1350px"
+            priority
+            className="object-cover object-center w-full h-full"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1280px"
           />
         </div>
       </div>

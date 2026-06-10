@@ -1,48 +1,65 @@
-
-
-
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle, FaClipboardCheck, FaPassport } from 'react-icons/fa';
 
 const data = [
   {
-    title: "Step #1: Initial Selection",
+    step: "01",
+    title: "Initial Selection",
     description: "Begin your journey with Eden Company by getting selected! You'll receive an official selection letter to get started on the process.",
-    icon: <FaCheckCircle className="text-green-500 text-3xl mb-4" />,
+    icon: <FaClipboardCheck className="text-red-500 text-3xl" />,
   },
   {
-    title: "Step #2: Issuance of Selection Letter",
+    step: "02",
+    title: "Issuance of Letter",
     description: "Your selection letter will be issued, confirming your acceptance. This letter is your gateway to moving forward in the process.",
-    icon: <FaCheckCircle className="text-yellow-500 text-3xl mb-4" />,
+    icon: <FaCheckCircle className="text-red-500 text-3xl" />,
   },
   {
-    title: "Step #3: Visa Stamp & Immigration",
+    step: "03",
+    title: "Visa Stamp & Entry",
     description: "Your journey to Canada becomes official with the visa stamp! You'll also undergo a medical checkup as part of the immigration process.",
-    icon: <FaCheckCircle className="text-blue-500 text-3xl mb-4" />,
+    icon: <FaPassport className="text-red-500 text-3xl" />,
   },
 ];
 
 export default function Features() {
   return (
-    <div className="lg:max-w-5xl bg-slate-50 mx-auto p-4">
-      <h2 className="text-3xl mb-4 text-center font-bold text-blue-600">
-        Your Simple Journey to Canada: 3 Easy Steps
-      </h2>
-      <ul className="gap-8 flex flex-col w-full lg:flex-row font-serif">
+    <section className="w-full max-w-7xl mx-auto px-6 py-16 lg:py-20 bg-slate-50/50 rounded-3xl border border-gray-100 my-10">
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <span className="text-red-600 font-semibold tracking-wider uppercase text-sm">Path to Success</span>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mt-1">
+          Your Journey to Canada in 3 Steps
+        </h2>
+        <div className="bg-red-500 h-1.5 w-20 rounded-full mt-3 mx-auto"></div>
+      </div>
+      
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
         {data.map((item, index) => (
-          <li
+          <div
             key={index}
-            className="mx-auto p-4 bg-white shadow-xl rounded-lg transform transition-transform hover:scale-105 w-full lg:w-1/3"
+            className="relative bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group"
           >
-            <div className="flex justify-center">{item.icon}</div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center">
-              {item.title}
+            {/* Step Number Badge */}
+            <div className="absolute top-6 right-8 text-6xl font-black text-gray-100 select-none group-hover:text-red-50 transition-colors duration-300">
+              {item.step}
+            </div>
+
+            {/* Icon Circle */}
+            <div className="bg-red-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-inner group-hover:bg-red-500 group-hover:text-white transition-all duration-300">
+              <span className="group-hover:scale-110 transition-transform duration-300 text-red-600 group-hover:text-white">
+                {item.icon}
+              </span>
+            </div>
+
+            {/* Content */}
+            <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-red-600 transition-colors">
+              Step {item.step}: {item.title}
             </h3>
-            <p className="text-gray-600 text-lg leading-relaxed text-center">
+            <p className="text-gray-500 text-sm sm:text-base leading-relaxed flex-grow">
               {item.description}
             </p>
-          </li>
+          </div>
         ))}
-      </ul>
-    </div>
+      </div>
+    </section>
   );
 }
