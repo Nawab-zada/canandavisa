@@ -27,7 +27,7 @@ export const Freevisa = () => {
         {/* Highlight Badge */}
         <div className="relative z-10 bg-yellow-400 text-red-950 font-bold px-6 py-3 rounded-xl shadow-md flex items-center gap-2 hover:scale-105 transition-transform duration-200 text-sm sm:text-base">
           <FaClock size={16} className="text-red-950/80 animate-spin" style={{ animationDuration: '6s' }} />
-          Total Processing: 10 - 15 Days
+          Processing: 2 months
         </div>
 
       </div>

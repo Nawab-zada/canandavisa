@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
+    <nav className="sticky top-0 w-full z-50 bg-gradient-to-r from-red-500 to-pink-500 md:bg-white/95 md:backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
         {/* Logo Section */}
         <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">

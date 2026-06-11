@@ -9,14 +9,14 @@ import { motion } from "framer-motion";
 import Link from 'next/link';
 
 const features = [
-  { title: "Security Guard", description: "Ensure safety and security at company premises.", salary: 2300, icon: <FaShieldAlt />, image: "/secrityguard.png" },
-  { title: "Food Packing", description: "Pack and prepare food products for distribution.", salary: 3500, icon: <FaBox />, image: "/foodpacker.png" },
-  { title: "Cook", description: "Prepare and cook meals according to company standards.", salary: 2500, icon: <FaUtensils />, image: "/cook.png" },
-  { title: "Driver", description: "Transport goods and employees safely to designated locations.", salary: 3800, icon: <FaTruck />, image: "/driver.png" },
-  { title: "Cashier", description: "Handle financial transactions and customer payments.", salary: 2700, icon: <FaCashRegister />, image: "/cashier.png" },
-  { title: "Accounting", description: "Manage financial records and transactions.", salary: 3200, icon: <FaCalculator />, image: "/accounting.png" },
-  { title: "Plumber", description: "Install and repair piping systems.", salary: 2100, icon: <FaWrench />, image: "/plumber.png" },
-  { title: "Electrician", description: "Install and maintain electrical systems.", salary: 3000, icon: <FaBolt />, image: "/electric.png" },
+  { title: "Security Guard", description: "Ensure safety and security at company premises.", salary: 2500, icon: <FaShieldAlt />, image: "/secrityguard.png" },
+  { title: "Food Packing", description: "Pack and prepare food products for distribution.", salary: 3700, icon: <FaBox />, image: "/foodpacker.png" },
+  { title: "Cook", description: "Prepare and cook meals according to company standards.", salary: 2700, icon: <FaUtensils />, image: "/cook.png" },
+  { title: "Driver", description: "Transport goods and employees safely to designated locations.", salary: 4000, icon: <FaTruck />, image: "/driver.png" },
+  { title: "Cashier", description: "Handle financial transactions and customer payments.", salary: 2900, icon: <FaCashRegister />, image: "/cashier.png" },
+  { title: "Accounting", description: "Manage financial records and transactions.", salary: 3400, icon: <FaCalculator />, image: "/accounting.png" },
+  { title: "Plumber", description: "Install and repair piping systems.", salary: 2300, icon: <FaWrench />, image: "/plumber.png" },
+  { title: "Electrician", description: "Install and maintain electrical systems.", salary: 3200, icon: <FaBolt />, image: "/electric.png" },
 ];
 
 const FeatureCards = () => {
