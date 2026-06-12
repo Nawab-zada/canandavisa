@@ -16,17 +16,25 @@ import CallToAction from "./components/Calltoaction";
 import Banner from "./components/Apply";
 export default function Home() {
   return (
-    <div className="">
-    
+    <div className="" id="home">
+     
      <Banner/>
-     <Aboutus/>
+     <div id="aboutus">
+       <Aboutus/>
+     </div>
      <CallToAction/>
-     <FeatureCards/>
+     <div id="visacategories">
+       <FeatureCards/>
+     </div>
      <Sardar/>
      <Scammer/>
-     <Features/>
+     <div id="steps">
+       <Features/>
+     </div>
      <Freevisa/>
-     <Contact/>
+     <div id="contactus">
+       <Contact/>
+     </div>
      <Footer/>
      <WhatsAppButton/>
     

@@ -1,7 +1,35 @@
-import Link from 'next/link';
+'use client'
+
 import { MapPin, Phone } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+    e.preventDefault();
+    if (link === '#home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const targetId = link.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      const navbarHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - navbarHeight,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const footerLinks = [
+    { name: 'Home', link: '#home' },
+    { name: 'About Us', link: '#aboutus' },
+    { name: 'Visa Categories', link: '#visacategories' },
+    { name: 'Steps', link: '#steps' },
+    { name: 'Contact Us', link: '#contactus' },
+  ];
+
   return (
     <footer className="w-full bg-slate-900 border-t border-slate-800 text-slate-300">
       {/* Main Footer */}
@@ -27,12 +55,19 @@ const Footer = () => {
                 <span className="text-sm font-medium">Toronto, Canada</span>
               </div>
               
-              <div className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors duration-200">
+              <a href="tel:+18076973974" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors duration-200">
                 <Phone size={18} className="text-red-500 flex-shrink-0" />
-                <a href="tel:+18076973974" className="text-sm font-semibold hover:text-red-500 transition-colors">
+                <span className="text-sm font-semibold hover:text-red-500 transition-colors">
                   +1 (807) 697-3974
-                </a>
-              </div>
+                </span>
+              </a>
+
+              <a href="https://wa.me/18076973974" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors duration-200">
+                <FaWhatsapp size={18} className="text-green-500 flex-shrink-0" />
+                <span className="text-sm font-semibold hover:text-green-500 transition-colors">
+                  WhatsApp Us
+                </span>
+              </a>
             </div>
           </div>
           
@@ -43,26 +78,17 @@ const Footer = () => {
             </h2>
             <nav>
               <ul className="space-y-3">
-                <li>
-                  <Link href="/" className="text-sm text-slate-400 hover:text-red-500 transition-colors duration-200 block">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/Aboutus" className="text-sm text-slate-400 hover:text-red-500 transition-colors duration-200 block">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/visacotogory" className="text-sm text-slate-400 hover:text-red-500 transition-colors duration-200 block">
-                    Visa Categories
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/Contactus" className="text-sm text-slate-400 hover:text-red-500 transition-colors duration-200 block">
-                    Contact Us
-                  </Link>
-                </li>
+                {footerLinks.map((item, index) => (
+                  <li key={index}>
+                    <a
+                      href={item.link}
+                      onClick={(e) => handleSmoothScroll(e, item.link)}
+                      className="text-sm text-slate-400 hover:text-red-500 transition-colors duration-200 block cursor-pointer"
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
@@ -70,7 +96,7 @@ const Footer = () => {
           {/* We're Available Column (Span 4) */}
           <div className="md:col-span-4 space-y-6">
             <h2 className="text-white text-lg font-bold tracking-wider uppercase">
-              We're Available
+              We&apos;re Available
             </h2>
             <div className="space-y-2.5">
               {[
