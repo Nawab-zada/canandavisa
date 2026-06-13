@@ -55,7 +55,7 @@ const WhatsAppButton = () => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ type: "spring", duration: 0.5 }}
-            className="absolute bottom-10  bg-white p-4 rounded-lg shadow-xl w-80 border border-gray-200"
+            className="absolute bottom-10 right-0 sm:left-0 bg-white p-4 rounded-lg shadow-xl w-[calc(100vw-40px)] sm:w-80 max-w-sm border border-gray-200 origin-bottom-right sm:origin-bottom-left"
           >
             <h3 className="text-lg font-semibold mb-3 text-gray-800 border-b pb-2">Contact Us</h3>
             <motion.form 

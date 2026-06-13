@@ -101,7 +101,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${inter.variable} antialiased font-sans`}
+        className={`${inter.variable} antialiased font-sans overflow-x-hidden`}
       >
         <Navbar />
         <main>{children}</main>
