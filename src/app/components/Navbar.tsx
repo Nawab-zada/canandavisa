@@ -52,9 +52,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 w-full z-50 transition-all duration-500 ${
+      className={`sticky top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-lg shadow-lg border-b border-gray-100'
+          ? 'bg-white shadow-md border-b border-gray-200'
           : 'bg-white shadow-sm border-b border-gray-100'
       }`}
     >
@@ -77,7 +77,7 @@ const Navbar = () => {
               key={index}
               href={item.link}
               onClick={(e) => handleSmoothScroll(e, item.link)}
-              className="relative text-gray-600 hover:text-red-600 font-medium text-sm tracking-wide transition-colors duration-200 cursor-pointer group"
+              className="relative text-gray-800 hover:text-red-600 font-semibold text-sm tracking-wide transition-colors duration-200 cursor-pointer group"
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300 rounded-full"></span>
@@ -98,7 +98,7 @@ const Navbar = () => {
         {/* Mobile Menu Toggle Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-700 hover:text-red-600 focus:outline-none transition-colors"
+          className="md:hidden text-gray-900 hover:text-red-600 focus:outline-none transition-colors"
           aria-label="Toggle menu"
         >
           <svg
